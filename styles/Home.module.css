@@ -1,3 +1,20 @@
+.home_page {
+  background-image: linear-gradient(
+    to top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+}
 .main {
   display: flex;
   flex-direction: column;
@@ -28,6 +45,7 @@
 .nav_eyes {
   display: flex;
   height: 1.25rem;
+  color: #000;
 }
 
 .description {
@@ -87,7 +105,8 @@
   margin-bottom: 0.7rem;
 }
 
-.card p, .card a {
+.card p,
+.card a {
   margin: 0;
   opacity: 0.6;
   font-size: 0.9rem;
@@ -114,7 +133,6 @@
     transform: translateX(4px);
   }
 }
-
 
 /* Mobile */
 @media (max-width: 700px) {
