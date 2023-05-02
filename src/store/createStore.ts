@@ -1,4 +1,4 @@
-import create from 'zustand'
+import { create } from 'zustand'
 import ITodo from './types/ITodo'
 import createTodoSlice from './slices/todoSlice'
 

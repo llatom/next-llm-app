@@ -1,6 +1,4 @@
-import create from 'zustand'
-
-// Extend this store if you need!
+import { create } from 'zustand'
 
 export interface AppStore {
   fontsLoaded: boolean
