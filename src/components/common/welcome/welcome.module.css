@@ -2,6 +2,7 @@
   --color-black: #000;
   --color-gray: #0f0f0f;
   --color-blue: #7068da;
+  --color-orange:#eb9d30;
   --color-gray-lighter: #262626;
   --rounded-lg: 8px;
   --rounded-md: 4px;
@@ -25,11 +26,11 @@
 .logo {
   display: block;
   margin-bottom: 32px;
-  padding: 20px;
-  border: 1px solid var(--color-gray-lighter);
+  padding: 6px;
+  border: 1px solid var(--color-orange);
   max-width: max-content;
   border-radius: var(--rounded-lg);
-  background: black;
+  background: orange;
 }
 
 .box {
