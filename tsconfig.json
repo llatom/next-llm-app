@@ -18,9 +18,7 @@
     "baseUrl": ".",
     // Using "paths" allows you to configure module path aliases
     "paths": {
-      "@/*": ["./*"],
-      "@/components/*": ["components/*"],
-      "@/store/*": ["store/*"]
+      "@/*": ["src/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
