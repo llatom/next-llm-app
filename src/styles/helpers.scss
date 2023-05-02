@@ -1,7 +1,6 @@
 @use 'sass:string';
 @use 'sass:math';
 
-/* stylelint-disable-next-line number-max-precision */
 $golden-ratio: 1.6180339887498948482;
 $reciprocal-golden-ratio: 1 / $golden-ratio;
 $duration: $reciprocal-golden-ratio * 1.2;

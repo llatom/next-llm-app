@@ -31,7 +31,6 @@ const inter = Inter({
 const App = ({ Component, pageProps, ...rest }: AppProps) => {
   if (gaTrackingId) useAppGA()
 
-  useOverflowDebuggerInDev()
   useUserIsTabbing()
   useFontsLoaded()
 
@@ -57,24 +56,6 @@ const App = ({ Component, pageProps, ...rest }: AppProps) => {
       {getLayout({ Component, pageProps, ...rest })}
     </>
   )
-}
-
-/* APP HOOKS */
-
-const useOverflowDebuggerInDev = () => {
-  React.useEffect(() => {
-    if (!isDev) return
-    let mousetrapRef: Mousetrap.MousetrapInstance | undefined = undefined
-    import('mousetrap').then(({ default: mousetrap }) => {
-      mousetrapRef = mousetrap.bind(['command+i', 'ctrl+i', 'alt+i'], () => {
-        document.body.classList.toggle('inspect')
-      })
-    })
-
-    return () => {
-      mousetrapRef?.unbind(['command+i', 'ctrl+i', 'alt+i'])
-    }
-  }, [])
 }
 
 const useUserIsTabbing = () => {
